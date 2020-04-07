@@ -26,7 +26,7 @@ export default function SimpleSlider() {
 
   const dot = dotArr.map((num) => (
     <div 
-    className={"dot"} 
+    className="dot" 
     onClick={() => handleDot(num)}
     id={num} 
     key={num} 

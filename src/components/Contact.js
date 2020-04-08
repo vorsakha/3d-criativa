@@ -21,7 +21,7 @@ export default function Contact() {
             <div style={props}>
                 <div className="container">
                     <h3>Contato</h3><br />
-                    <form name="contact" id="form" method="POST">
+                    <form name="contact" id="form" method="POST" action="/">
                         
                         <input placeholder="Nome" type="text" name="name" /><br />
                         

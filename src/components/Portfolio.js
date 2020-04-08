@@ -22,7 +22,7 @@ export default function Portfolio() {
         >{props => (
             <div style={props}>
                 <div className="container">
-                    <h3>Modelos Disponíveis</h3>
+                    <h3>Modelos</h3>
                     <SimpleSlider /> 
                 </div>
             </div>

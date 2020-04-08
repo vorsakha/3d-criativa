@@ -284,7 +284,7 @@ input:focus, textarea:focus {
 }
 
 #form > button {
-    margin: 1em 1em 0 1em;
+    margin: 1em 0 0 0;
     padding: 1em 2.3em;
     border: 0;
     cursor: pointer;
@@ -412,7 +412,7 @@ input:focus, textarea:focus {
     h1 {
         font-size: 4em;
     }
-    input, textarea, input:last-of-type {
+    input, textarea, input:last-of-type, button {
         width: 100%;
     }
     #root {

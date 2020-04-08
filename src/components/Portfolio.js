@@ -22,10 +22,12 @@ export default function Portfolio() {
         >{props => (
             <div style={props}>
                 <div className="container">
-                    <h3>Portfolio</h3>
-                    <p>Somos a 3D Criativa! Aqui você encontra tudo em impressões 3D!
-Fazemos impressões para o mundo gamer, nerd e geek!!
-Confira!</p>
+                    <div>
+                        <h3>Portfolio</h3>
+                        <p>Somos a 3D Criativa! Aqui você encontra tudo em impressões 3D!
+                        Fazemos impressões para o mundo gamer, nerd e geek!!
+                        Confira!</p>
+                    </div>
                     <SimpleSlider /> 
                 </div>
             </div>

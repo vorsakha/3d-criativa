@@ -11,26 +11,28 @@ import Instagram from "./components/Instagram"
 
 export default function App() {
     return(
-        <div id="container">
-            <Navbar />
-            <Switch>
-                <Route exact path="/">
-                    <Home />
-                </Route>
+        <>
+            <div id="container">
+                <Navbar />
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
 
-                <Route path="/portfolio">
-                    <Portfolio />
-                </Route>
+                    <Route path="/portfolio">
+                        <Portfolio />
+                    </Route>
 
-                <Route path="/contact">
-                    <Contact />
-                </Route>
+                    <Route path="/contact">
+                        <Contact />
+                    </Route>
 
-                <Route path="/socials">
-                    <Instagram />
-                </Route>
-            </Switch>
-        </div>
-
+                    <Route path="/socials">
+                        <Instagram />
+                    </Route>
+                </Switch>
+                <footer>All rights reserved 3D Criativa 2020</footer>
+            </div>
+        </>
     )
 }

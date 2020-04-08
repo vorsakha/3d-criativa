@@ -7,6 +7,10 @@
     outline: none;
 }
 
+html {
+    background-color: rgb(78,167,166);
+}
+
 body {
     font-family: 'Share Tech', sans-serif;
     margin: 0;
@@ -101,6 +105,7 @@ nav {
 
 .container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 80em;
     background-color: white;
@@ -289,6 +294,11 @@ input:focus, textarea:focus {
     background-color: rgb(66, 66, 66);
 }
 
+footer {
+    margin: 3em auto 3em auto;
+    
+}
+
 .touch {
     display: none;
 }
@@ -403,10 +413,10 @@ a {
     }
     #home-container {
         width: 100vw;
-        height: 85vh;
+        height: 75vh;
     }
     .portfolio {
-        height: 85vh;
+        height: 75vh;
     }
     .img-gradient {
         align-self: flex-end;
@@ -433,7 +443,7 @@ a {
         width: 100%;
     }
     #root {
-        height: 85vh;
+        height: 100vh;
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;

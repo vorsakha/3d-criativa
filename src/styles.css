@@ -300,6 +300,10 @@ input:focus, textarea:focus {
     background-color: rgb(66, 66, 66);
 }
 
+#form > button:active, a {
+    background-color: transparent;
+}
+
 
 @media screen and (max-width: 1400px) {
     * {

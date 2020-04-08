@@ -106,15 +106,58 @@ nav {
     background-color: white;
     padding: 4em;
     text-align: start;
-
 }
 
-.big-img {
-    width: 53.3em;
-    height: 40em;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.portfolio {   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60em;
+    background-color: white;
+    text-align: start;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SLIDER */
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.next,
+  .prev {
+    top: calc(50%);
+    position: absolute;
+    background: white;
+    width: 1.2em;
+    height: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 35px;
+    z-index: 2;
+    color: #333;
+    border-radius: 30px;
+  }
+  
+  .next {
+    right: 4.6em;
+  }
+  
+  .prev {
+    left: 4.6em;
+    transform: scale(-1);
+  }
+  
+  .slider-container > img {
+    position: absolute;
+    max-width: 60em;
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -122,45 +165,23 @@ nav {
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
-    margin-bottom: 2em;
-    max-width: 100%;
-}
-
-.img-1 {
-    background-image: url(./img/portfolio/port1.jfif);
-}
-
-.img-2 {
-    background-image: url(./img/portfolio/port2.jfif);
-}
-
-.img-3 {
-    background-image: url(./img/portfolio/port3.jfif);
-}
-
-.img-4 {
-    background-image: url(./img/portfolio/port4.jfif);
-}
-
-.img-5 {
-    background-image: url(./img/portfolio/port5.jfif);
-}
-
-.img-6 {
-    background-image: url(./img/portfolio/port6.jfif);
-}
-
-.img-7 {
-    background-image: url(./img/portfolio/port7.jfif);
-}
-
-.img-8 {
-    background-image: url(./img/portfolio/port8.jfif);
-}
-
-.img-9 {
-    background-image: url(./img/portfolio/port9.jfif);
-}
+    cursor: pointer;
+  }
+  
+  .refresh {
+    padding: 10px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 
 .slide-container {
     display: flex;
@@ -180,38 +201,6 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 2em;
-}
-
-.inside-btn {
-    position: relative;
-}
-
-#btn-left {
-    position: absolute;
-    top: 6.5em;
-    left: 3.12em;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 3em;
-    padding: 1em;
-    color: #333;
-}
-
-#btn-right {
-    position: absolute;
-    top: 6.5em;
-    right: .22em;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    font-size: 3em;
-    padding: 1em;
-    color: #333;
 }
 
 #form {
@@ -300,6 +289,10 @@ input:focus, textarea:focus {
     background-color: rgb(66, 66, 66);
 }
 
+.touch {
+    display: none;
+}
+
 input,
 textarea,
 button,
@@ -347,7 +340,7 @@ a {
     }
     .container {
         width: 40em;
-        justify-content: center;
+        height: 60em;
     }
     .img-container > img {
         width: 10em;
@@ -364,44 +357,51 @@ a {
     }
     .slide-container {
         width: 32em;
-        height: 24em;
     }
-    .big-img {
-        max-width: 100%;
-        height: 24em;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }.dot {
+    .dot {
         padding: .6em;
         margin: .6em;
     }
     .dot-container {
         margin-top: 2em;
     }
-    #btn-left {
-        top: 4em;
-        left: .03em;
-        font-size: 3em;
-        padding: 1em;
+    .slider-container > img {
+        width: 40em;
     }
-    #btn-right {
-        top: 4em;
-        left: 10.68em;
-        font-size: 3em;
-        padding: 1em;
+    .next, .prev {
+        width: 30px;
+        height: 30px;
+        top: calc(52%);
     }
+    .next {
+        right: .2em;
+      }
+      
+      .prev {
+        left: .2em;
+      }
+
+      p {
+        margin-bottom: 5em;
+      }
+
 }
 
 @media screen and (max-width: 410px) {
     * {
         font-size: 8px;
-    }.container {
+    }
+    .container {
         width: 100%;
+        height: 80em;
         padding: 1em;
     }
     #home-container {
         width: 100%;
-        height: 100%;
+        height: 60em;
+    }
+    .portfolio {
+        height: 60em;
     }
     .img-gradient {
         width: 100%;
@@ -411,12 +411,11 @@ a {
     }
     p {
         font-size: 1.6em;
-        margin-bottom: 3em;
     }
     h3 {
         font-size: 2.8em;
         margin-top: .6em;
-        margin-bottom: .6em;
+        margin-bottom: 0;
     }
     h1 {
         font-size: 4em;
@@ -429,12 +428,6 @@ a {
         padding-left: 0;
         padding-right: 0;
     }
-    #btn-right {
-        width: 100px;
-    }
-    #btn-left {
-        width: 100px;
-    }
     .dot-container {
         margin-top: 3em;
         margin-bottom: 2em;
@@ -442,5 +435,19 @@ a {
     #form > button {
         padding: 1.2em;
         margin-bottom: .6em;
+    }
+    .slider-container {
+        min-width: 100%;
+    }
+    .slider-container > img {
+        width: 100%;
+    }
+    .next, .prev {
+        display: none;
+    }
+    .touch {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
     }
 }

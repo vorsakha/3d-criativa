@@ -19,7 +19,7 @@ export default function Contact() {
         config={config.stiff}
         >{props => (
             <div className="container" style={props}>
-                    <h3>Contato</h3><br />
+                    <h3>Contato</h3>
                     <form name="contact" id="form" method="POST" action="/">
                         
                         <input placeholder="Nome" type="text" name="name" /><br />

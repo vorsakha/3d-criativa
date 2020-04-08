@@ -400,13 +400,14 @@ a {
     }
     #home-container {
         width: 100vw;
-        height: 100vh;
+        height: 85vh;
     }
     .portfolio {
-        height: 100vh;
+        height: 85vh;
     }
     .img-gradient {
-        width: 100%;
+        width: 100vw;
+        height: 55vh;
         align-self: flex-end;
     }
     .home-image {

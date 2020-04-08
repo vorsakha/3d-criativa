@@ -41,7 +41,7 @@ export default function Portfolio() {
                     <p>Somos a 3D Criativa! Aqui você encontra tudo em impressões 3D!
                     Fazemos impressões para o mundo gamer, nerd e geek!!
                     Confira!</p>
-                    <div className="touch" >Toque pra ver as imagens</div>
+                    <div className="touch" >Toque para passar as imagens</div>
                 </div>
                 <BombaSlider />
                 {/* dot */}

@@ -295,7 +295,8 @@ input:focus, textarea:focus {
 }
 
 footer {
-    margin: 3em auto 3em auto;
+    align-self: center;
+    margin: 3em;
     
 }
 

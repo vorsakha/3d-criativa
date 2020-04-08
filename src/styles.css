@@ -394,19 +394,20 @@ a {
         font-size: 8px;
     }
     .container {
-        width: 100%;
-        height: 80em;
+        width: 100vw;
+        height: 100vh;
         padding: 1.5em;
     }
     #home-container {
-        width: 100%;
-        height: 60em;
+        width: 100vw;
+        height: 100vh;
     }
     .portfolio {
-        height: 60em;
+        height: 100vh;
     }
     .img-gradient {
         width: 100%;
+        align-self: flex-end;
     }
     .home-image {
         width: 100%;

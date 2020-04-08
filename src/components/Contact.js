@@ -20,7 +20,7 @@ export default function Contact() {
         >{props => (
             <div style={props}>
                 <div className="container">
-                    <h3>Contact Me</h3><br />
+                    <h3>Contato</h3><br />
                     <form name="contact" id="form" method="POST" data-netlify="true" action="">
                         <input placeholder="Nome" type="text" id="fname" name="name" /><br />
                         

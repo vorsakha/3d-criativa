@@ -403,10 +403,10 @@ a {
     }
     #home-container {
         width: 100vw;
-        height: 95vh;
+        height: 85vh;
     }
     .portfolio {
-        height: 95vh;
+        height: 85vh;
     }
     .img-gradient {
         align-self: flex-end;

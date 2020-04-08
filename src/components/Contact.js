@@ -18,8 +18,7 @@ export default function Contact() {
         to={{ opacity: 1, marginTop: 0 }}
         config={config.stiff}
         >{props => (
-            <div style={props}>
-                <div className="container">
+            <div className="container" style={props}>
                     <h3>Contato</h3><br />
                     <form name="contact" id="form" method="POST" action="/">
                         
@@ -36,7 +35,6 @@ export default function Contact() {
                         <div data-netlify-recaptcha="true"></div>
                         <button type="submit">Enviar</button>
                     </form>
-                </div>
             </div>
         )}
 

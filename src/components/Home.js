@@ -24,18 +24,16 @@ export default function Home() {
         to={{ opacity: 1, marginTop: 0 }}
         config={config.stiff}
         >{props => (
-            <div style={props}>
-                <div id="home-container">
-                    <div className="home-title">
-                        <h1 
-                        onClick={handleColor}  
-                        style={{ backgroundColor: rColor }}
-                        >3D Criativa</h1><br />
-                        <p>Trabalhamos com impressões 3D para o mundo gamer e nerd de São Paulo e todo o Brasil</p>
-                    </div>
-                    <div className="img-gradient">
-                        <div className="home-image"></div>
-                    </div>
+            <div id="home-container" style={props}>
+                <div className="home-title">
+                    <h1 
+                    onClick={handleColor}  
+                    style={{ backgroundColor: rColor }}
+                    >3D Criativa</h1><br />
+                    <p>Trabalhamos com impressões 3D para o mundo gamer e nerd de São Paulo e todo o Brasil</p>
+                </div>
+                <div className="img-gradient">
+                    <div className="home-image"></div>
                 </div>
             </div>
         )}

@@ -36,12 +36,13 @@ export function BombaSlider() {
     }
 
     return(
-        <div className="slider-container" onClick={() => paginate(1)}>
+        <div className="slider-container">
             <AnimatePresence
             initial={false}
             custom={direction}
             >
                 <motion.img
+                onClick={() => paginate(1)}
                 key={page}
                 src={images[imageIndex]}
                 custom={direction}

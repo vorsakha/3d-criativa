@@ -56,8 +56,8 @@ li {
     width: 34em;
     height: 38.5em;
     background-image:
-    linear-gradient(to left, rgba(148,233,189,0.3), rgba(51, 51, 51, .2)),
-    url(./img/CONE\ PROJECT\ 2.png);
+    linear-gradient(to top, rgba(88, 226, 155, 0.4), transparent),
+    url(./img/home.png);
     background-size: cover;
     background-position: center;
 }

@@ -20,16 +20,14 @@ export default function Portfolio() {
         to={{ opacity: 1, marginTop: 0  }}
         config={config.stiff}
         >{props => (
-            <div style={props}>
-                <div className="container">
-                    <div>
-                        <h3>Portfolio</h3>
-                        <p>Somos a 3D Criativa! Aqui você encontra tudo em impressões 3D!
-                        Fazemos impressões para o mundo gamer, nerd e geek!!
-                        Confira!</p>
-                    </div>
-                    <SimpleSlider /> 
+            <div className="container" style={props}>
+                <div>
+                    <h3>Portfolio</h3>
+                    <p>Somos a 3D Criativa! Aqui você encontra tudo em impressões 3D!
+                    Fazemos impressões para o mundo gamer, nerd e geek!!
+                    Confira!</p>
                 </div>
+                <SimpleSlider /> 
             </div>
         )}
         </Spring>

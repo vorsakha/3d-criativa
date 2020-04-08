@@ -427,7 +427,10 @@ input:focus, textarea:focus {
         padding-right: 0;
     }
     #btn-right {
-        right: .2em;
+        width: 100px;
+    }
+    #btn-left {
+        width: 100px;
     }
     .dot-container {
         margin-top: 3em;

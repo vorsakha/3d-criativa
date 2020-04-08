@@ -395,22 +395,25 @@ a {
     }
     .container {
         width: 100vw;
-        height: 85vh;
+        height: 100vh;
         padding: 1.5em;
+    }
+    .home-title {
+        padding: 2em;
     }
     #home-container {
         width: 100vw;
-        height: 80vh;
+        height: 95vh;
     }
     .portfolio {
-        height: 85vh;
+        height: 95vh;
     }
     .img-gradient {
         align-self: flex-end;
         display: flex;
         align-items: flex-end;
         width: 100vw;
-        height: 53vh;
+        height: 50vh;
     }
     .home-image {
         width: 100%;
@@ -421,7 +424,7 @@ a {
     h3 {
         font-size: 2.8em;
         margin-top: .6em;
-        margin-bottom: 0;
+        margin-bottom: .8em;
     }
     h1 {
         font-size: 4em;
